@@ -1,0 +1,39 @@
+class Vehicle {
+    void start() {
+        System.out.println("Vehicle starts with a key.");
+    }
+}
+
+class Car extends Vehicle {
+    void fourWheels() {
+        System.out.println("Car has 4 wheels.");
+    }
+}
+
+class Bike extends Vehicle {
+    void twoWheels() {
+        System.out.println("Bike has 2 wheels.");
+    }
+}
+
+class Truck extends Vehicle {
+    void heavyLoad() {
+        System.out.println("Truck carries heavy loads.");
+    }
+}
+
+public class HierarchicalInheritanceExample {
+    public static void main(String[] args) {
+        Car car = new Car();
+        car.start();
+        car.fourWheels();
+
+        Bike bike = new Bike();
+        bike.start();
+        bike.twoWheels();
+
+        Truck truck = new Truck();
+        truck.start();
+        truck.heavyLoad();
+    }
+}
